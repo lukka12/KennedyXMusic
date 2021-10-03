@@ -97,14 +97,9 @@ async def generate_cover(title, thumbnail):
     Image.alpha_composite(image5, image6).save("temp.png")
     img = Image.open("temp.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("etc/Roboto-Regular.ttf", 57)
-    draw.text((30, 535), f"Playing here", (0, 0, 0), font=font)
-    font = ImageFont.truetype("etc/Roboto-Medium.ttf", 75)
-    draw.text((30, 615),
-        f"{title[:20]} ...",
-        (0, 0, 0),
-        font=font,
-    )
+    font = ImageFont.truetype("etc/font.otf", 60)
+    draw.text((40, 550), "Playing here...", (0, 0, 0), font=font)
+    draw.text((40, 630), f"{title}", (0, 0, 0), font=font)
     img.save("final.png")
     os.remove("temp.png")
     os.remove("background.png")
@@ -532,7 +527,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/fa2cdb8a14a26950da711.png"
+        thumb_name = "https://telegra.ph/file/ca8af7378500099b78075.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
