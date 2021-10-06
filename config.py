@@ -11,7 +11,7 @@ if os.path.exists("local.env"):
 load_dotenv()
 que = {}
 admins = {}
-SESSION_NAME = getenv("SESSION_NAME", "")
+SESSION_NAME = getenv("SESSION_NAME")
 ARQ_API_KEY = getenv("ARQ_API_KEY")
 BOT_TOKEN = getenv("BOT_TOKEN", "2049904848:AAE6raTlxx9RWgp_22355kTVWJZQzPV9fp8")
 BOT_NAME = getenv("BOT_NAME", "𝐕rⓄs 𝐌𝐮₴𝐢𝐜")
