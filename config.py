@@ -11,7 +11,7 @@ if os.path.exists("local.env"):
 load_dotenv()
 que = {}
 admins = {}
-SESSION_NAME = getenv("SESSION_NAME", "BQA7AssN3AzELKRF_jTSVm_ki4mCPyVH9IL01ZkYgPuKOC2JFUydH0jMEifTHC_T67CZmLdiZnWK44i6l0IXEDEbCEDLRQDoPxooTB5V0qRp_bqU9vbV57JYO3Mit_SuKAP1uCMGT4F1Aq8wgx_zSfu8YTe6wOlgd-3t9YGcUqPxWJpxC1edj2wlOdFbk1Jppzo37eMZW2BrSgyRJXEqO_UIngLl0TjNDQsRJmmhWPWQgFrI7XJv3nJsfbNtx2-Fpv08Cs0fN8XDAJMRwQT9xQUFbOtfuGiCMoHSTAFX7BOz9u9hfp_luZdzC8dIQiG_7CNXj-VHRuXtKdf_VYZdxCkDds4g1QA")
+SESSION_NAME = getenv("SESSION_NAME", "")
 ARQ_API_KEY = getenv("ARQ_API_KEY")
 BOT_TOKEN = getenv("BOT_TOKEN", "2049904848:AAE6raTlxx9RWgp_22355kTVWJZQzPV9fp8")
 BOT_NAME = getenv("BOT_NAME", "𝐕rⓄs 𝐌𝐮₴𝐢𝐜")
